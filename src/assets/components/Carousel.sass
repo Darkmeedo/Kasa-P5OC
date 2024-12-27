@@ -1,0 +1,52 @@
+.carousel-container
+  position: relative
+  overflow: hidden
+  margin-inline: 100px
+
+
+.carousel
+  position: relative
+
+#carousel-image
+  width: 100%
+  max-width: 1240px
+  height: 100%
+  object-fit: cover
+  border-radius: 20px
+
+.arrow
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  font-size: 40px
+  color: white
+  cursor: pointer
+  z-index: 10
+  padding: 10px
+
+.left
+  left: 20px
+
+.right
+  right: 20px
+
+.counter
+  position: absolute
+  bottom: 20px
+  left: 50%
+  transform: translateX(-50%)
+  font-size: 18px
+  color: white
+  font-weight: bold
+  z-index: 10
+  padding-bottom: 20px
+
+.FlatPic
+  position: relative
+  margin: 0 auto   
+  width: 100%      
+  border-radius: 20px
+
+@media (max-width: 680px)
+  .carousel-container
+    margin-inline: 20px

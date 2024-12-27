@@ -1,0 +1,123 @@
+.FlatSpecs
+  display: flex
+  flex-direction: column   
+  align-items: flex-start  
+  gap: 10px               
+
+  h1
+    color: #ff6060
+    text-shadow: none
+    -webkit-text-stroke-color: unset
+    -webkit-text-stroke-width: unset
+    text-align: unset
+    font-weight: 500
+    font-size: 36px
+
+  h2
+    font-weight: 500
+    font-size: 18px
+
+.tags
+  display: flex
+  flex-wrap: wrap            
+  gap: 10px
+
+  span
+    color: white
+    background-color: #ff6060
+    border: none
+    border-radius: 10px
+    font-size: 16px
+    text-align: center
+    align-content: center
+    min-width: 115px
+    height: 25px
+
+    &:hover
+      background-color: #e55555
+
+    &:active
+      background-color: #cc4b4b
+
+.FlatContent
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  flex-grow: 1
+  align-items: center
+  margin-top: 30px
+
+.Flat-Owner
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+
+.Flat-Owner-Top
+  display: flex
+  align-items: center
+  justify-content: space-between
+  width: 100%
+
+  h3
+    color: #ff6060
+    font-weight: 500
+    font-size: 18px
+    margin: 0
+
+.Flat-Owner-Pic
+  border-radius: 50%
+  margin-left: 10px
+  object-fit: cover
+
+  img
+    border-radius: 50%
+    width: 50px
+    height: 50px
+    object-fit: cover
+
+.Flat-Rate
+  display: flex
+  margin-top: 10px
+
+  span
+    color: #ccc
+    font-size: 36px
+
+    &.on
+      color: #ff6060
+
+.FlatPic
+  border-radius: 20px
+
+  img
+    width: 100%
+    max-width: 1240px
+    max-height: 415px
+    border-radius: 20px
+    overflow: hidden
+    margin-bottom: 20px
+
+@media (max-width: 680px)
+  .FlatContent
+    flex-direction: column
+  
+  .Flat-Owner
+    margin-top: 20px
+    margin-bottom: 20px
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+    width: 100%
+
+  .Flat-Owner-Top
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: flex-end
+    gap: 10px
+    width: auto
+
+  .Flat-Rate
+    order: -1
+    margin-right: auto
+    margin-top: 0
