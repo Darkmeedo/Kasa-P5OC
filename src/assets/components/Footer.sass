@@ -1,6 +1,8 @@
 html, body
   height: 100%
   margin: 0
+  padding: 0
+  overflow: auto  
 
 *, *::before, *::after
   box-sizing: border-box
@@ -8,23 +10,35 @@ html, body
 .App
   display: flex
   flex-direction: column
-  min-height: 100vh
-
-.main-content
-  flex: 1
-  padding-bottom: 50px
+  min-height: 100vh  
 
 .footer
   background-color: black
   color: white
-  text-align: center
   padding: 20px
-  width: 100%
-  position: relative
-  bottom: 0
+  margin-top: 50px
+  text-align: center
+  height: 209px
+  display: grid
+  place-items: center
 
 .Footer__logo img
-  width: 10%
+  width: 60%
 
 .footer__text
+  display: inline-block
   margin-top: 10px
+  font-size: 24px
+  font-weight: 500
+
+@media (max-width: 680px)
+
+  .main-content
+    padding-bottom: 0
+  .Footer__logo img
+    width: 50%
+  .footer__text
+    font-size: 12px
+    align-self: baseline
+    width: auto
+    width: 133px

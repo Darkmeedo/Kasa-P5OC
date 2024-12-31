@@ -6,15 +6,20 @@ import Error from "./assets/Pages/Error";
 import FlatPage from "./assets/Pages/FlatPage";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
+// createBrowserRouter : Cette fonction permet de créer un routeur basé 
+// sur l'historique du navigateur, qui gère la navigation via l'URL.//
+
+// RouterProvider : Fournit le routeur à l'application, permettant aux composants enfants de gérer 
+//la navigation.
+
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     errorElement: <Error />,
   },
-  // Modification de la route pour inclure l'ID dans l'URL
   {
-    path: "/flat/:id",  // Le :id permet d'indiquer que c'est un paramètre dynamique
+    path: "/flat/:id",  
     element: <FlatPage />,
   },
   {

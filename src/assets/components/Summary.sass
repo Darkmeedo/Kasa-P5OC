@@ -18,7 +18,7 @@
 
 .chevron
   font-size: 1.2rem
-  transition: transform 0.3s ease
+  transition: transform 0.1s ease
   color: white
   cursor: pointer
 
@@ -27,19 +27,21 @@
 
 .summary__content-container
   background-color: white
-  padding: 20px
+  padding: 0 20px  /* Padding latéral constant */
   border-radius: 8px
   margin-top: 10px
   max-height: 0
   overflow: hidden
-  transition: max-height 0.5s ease-out
-  padding-top: 0
-  padding-bottom: 0
+  transition: max-height 0.5s ease-out, padding 0.3s ease-out
 
+  &.open
+    max-height: 1000px  
+    
 .summary__content-container.open
   max-height: 1000px
 
 .summary__content
-  font-size: 1rem
+  font-size: 18px
+  font-weight: 400
   color: #333
   margin: 0

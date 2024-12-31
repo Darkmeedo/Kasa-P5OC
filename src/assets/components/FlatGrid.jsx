@@ -14,7 +14,7 @@ function FlatGrid() {
       .then((res) => res.json())
       .then((res) => {
         setApartments(res);
-        console.log("Apartments:", res);  
+        console.log("Apartments:", res);
       })
       .catch(console.error);
   }
@@ -22,8 +22,15 @@ function FlatGrid() {
   return (
     <div className="grid">
       {apartments.map((apartment) => {
-        console.log("Appartement ID:", apartment.id);  
-        return <Flat title={apartment.title} imageUrl={apartment.cover} id={apartment.id} />;
+        console.log("Appartement ID:", apartment.id);
+        return (
+          <Flat 
+            key={apartment.id}  
+            title={apartment.title} 
+            imageUrl={apartment.cover} 
+            id={apartment.id} 
+          />
+        );
       })}
     </div>
   );

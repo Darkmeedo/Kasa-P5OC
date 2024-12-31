@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import Banner2 from "../components/Banner2";
+import Banner from "../components/Banner";
 import Summary from "../components/Summary";
 import "./About.sass";
 
@@ -25,7 +25,7 @@ const About = () => {
   return (
     <div className="about__content">
       <Navbar />
-      <Banner2 />
+      <Banner image="banner2.png" showTitle={false} />
       <div className="summaries">
         <Summary
           title="Fiabilité"

@@ -22,7 +22,7 @@ const Summary = ({ title, content }) => {
 
       
       <div className={`summary__content-container ${isOpen ? "open" : ""}`}>
-        <p className="summary__content">{content}</p>
+        <h2 className="summary__content">{content}</h2>
       </div>
     </div>
   );

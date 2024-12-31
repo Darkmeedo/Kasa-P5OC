@@ -1,12 +1,12 @@
 .navbar
   display: flex
-  gap: 2rem
+  gap: 57px
   align-items: center
   font-weight: 500
   margin: 0 100px
-  
+  font-size: 24px
 
-  &__logo
+  .navbar__logo
     margin-right: auto
 
   a
@@ -16,6 +16,10 @@
     &:hover
       text-decoration: underline
       color: #ff6060
+
+    &.active
+      text-decoration: underline
+      
 
 @media (max-width: 680px)
   .navbar

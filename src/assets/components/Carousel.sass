@@ -2,16 +2,25 @@
   position: relative
   overflow: hidden
   margin-inline: 100px
-
-
+  height: 415px  
+  display: flex  
+  justify-content: center  
+  align-items: center  
+  margin-top: 50px
 .carousel
   position: relative
+  height: 100%  
+  width: 100%  
+  display: flex  
+  justify-content: center  
+  align-items: center  
+  
 
 #carousel-image
   width: 100%
-  max-width: 1240px
-  height: 100%
-  object-fit: cover
+  height: 100% 
+  object-fit: cover 
+  object-position: center  
   border-radius: 20px
 
 .arrow
@@ -50,3 +59,4 @@
 @media (max-width: 680px)
   .carousel-container
     margin-inline: 20px
+    height: 255px
