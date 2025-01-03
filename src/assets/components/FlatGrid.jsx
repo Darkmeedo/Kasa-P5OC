@@ -14,15 +14,18 @@ function FlatGrid() {
       .then((res) => res.json())
       .then((res) => {
         setApartments(res);
-        console.log("Apartments:", res);
       })
       .catch(console.error);
   }
 
+  // Lors du chargement du composant, fetchFlats est exécuté pour aller chercher les données JSON.
+// Les données récupérées sont stockées dans l'état apartments.
+// Les appartements sont ensuite affichés en utilisant map et chaque élément est passé au composant Flat via des props.//
+
   return (
     <div className="grid">
       {apartments.map((apartment) => {
-        console.log("Appartement ID:", apartment.id);
+        
         return (
           <Flat 
             key={apartment.id}  

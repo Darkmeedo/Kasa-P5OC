@@ -15,7 +15,7 @@ function FlatPage() {
   const { id } = useParams();  
   const navigate = useNavigate();
 
-  useEffect(() => {
+  useEffect(() => {  //permet de gérer un effet secondaire, ici l'appel au JSON pour récupérer les données //
     fetchApartmentData();
   }, [id]);  
 

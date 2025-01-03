@@ -3,8 +3,7 @@ import "./Flat.sass";
 import { NavLink } from "react-router-dom";
 
 function Flat(props) {
-  console.log("Flat ID:", props.id);  
-
+ 
   return (
     <div className="Flat">
       

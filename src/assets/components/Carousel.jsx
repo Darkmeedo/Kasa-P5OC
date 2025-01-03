@@ -3,7 +3,7 @@ import './Carousel.sass';
 
 const Carousel = (props) => {
     const images = props.pictures || [];  
-    const [currentIndex, setCurrentIndex] = useState(0); 
+    const [currentIndex, setCurrentIndex] = useState(0); //state  //
     
     const changeImage = (direction) => {
         let newIndex = currentIndex + direction;
